@@ -15,9 +15,9 @@
                 <h1>DojoWeather</h1>
             </div>
             <div class="navLinks flex">
-                <a href="#">Burbank</a>
-                <a href="#">Chicago</a>
-                <a href="#">Dallas</a>
+                <a href="#" onclick="burbank(this)">Burbank</a>
+                <a href="#" onclick="chicago(this)">Chicago</a>
+                <a href="#" onclick="dallas(this)">Dallas</a>
             </div>
         </div>
     </div>
@@ -30,9 +30,9 @@
             </div>
             <div class="temperature">
                 <label for="temperature">show temperature in :</label>
-                <select name="temperature" id="temperature">
-                    <option value="Fahrenheit"><span>&#176;</span>F</option>
-                    <option value="Celcius"><span>&#176;</span>C</option>
+                <select name="temperature" id="temperature" onchange="cToF()">
+                    <option value="Celcius">&#176;C</option>
+                    <option value="Fahrenheit">&#176;F</option>
                 </select>
             </div>
         </div>
@@ -46,51 +46,51 @@
                     <h2>some rain</h2>
                 </div>
                 <div class="flex highLow">
-                    <h4 class="highLow_h4_1">24<span>&#176;</span></h4>
-                    <h4 class="highLow_h4_2">18<span>&#176;</span></h4>
+                    <h4 class="highLow_h4_1" id="todayHigh">24<span>&#176;</span></h4>
+                    <h4 class="highLow_h4_2" id="todayLow">18<span>&#176;</span></h4>
                 </div>
             </div>
             <div class="column">
                 <!-- Temp Tomorrow -->
                 <div class="boxTop tomorrow">
                     <h1>Tomorrow</h1>
-                    <img src="assets\some_sun.png" alt="Expect some sun">
+                    <img src="assets/some_sun.png" alt="Expect some sun">
                     <h2>some sun</h2>
                 </div>
                 <div class="flex highLow">
-                    <h4 class="highLow_h4_1">27<span>&#176;</span></h4>
-                    <h4 class="highLow_h4_2">19<span>&#176;</span></h4>
+                    <h4 class="highLow_h4_1" id="tomorrowHigh">27<span>&#176;</span></h4>
+                    <h4 class="highLow_h4_2" id="tomorrowLow">19<span>&#176;</span></h4>
                 </div>
             </div>
             <div class="column">
                 <!-- Temp Friday -->
                 <div class="boxTop friday">
                     <h1>Friday</h1>
-                    <img src="assets\some_clouds.png" alt="Expect some clouds">
+                    <img src="assets/some_clouds.png" alt="Expect some clouds">
                     <h2>some clouds</h2>
                 </div>
                 <div class="flex highLow">
-                    <h4 class="highLow_h4_1">21<span>&#176;</span></h4>
-                    <h4 class="highLow_h4_2">16<span>&#176;</span></h4>
+                    <h4 class="highLow_h4_1" id="fridayHigh">21<span>&#176;</span></h4>
+                    <h4 class="highLow_h4_2" id="fridayLow">16<span>&#176;</span></h4>
                 </div>
             </div>
             <div class="column">
                 <!-- Temp Saturday -->
                 <div class="boxTop saturday">
                     <h1>Saturday</h1>
-                    <img src="assets\some_sun.png" alt="Expect some sun">
+                    <img src="assets/some_sun.png" alt="Expect some sun">
                     <h2>some sun</h2>
                 </div>
                 <div class="flex highLow">
-                    <h4 class="highLow_h4_1">26<span>&#176;</span></h4>
-                    <h4 class="highLow_h4_2">21<span>&#176;</span></h4>
+                    <h4 class="highLow_h4_1" id="saturdayHigh">26<span>&#176;</span></h4>
+                    <h4 class="highLow_h4_2" id="saturdayLow">21<span>&#176;</span></h4>
                 </div>
             </div>
         </div>
-        <div class="flex footer">
+        <div class="flex footer" id="cookieAlert">
             <!-- Cookie Footer -->
             <div>
-                <img src="assets\cookie.png" alt="Cookie" class="cookie">
+                <img src="assets/cookie.png" alt="Cookie" class="cookie">
             </div>
             <div class="cookieText">
                 <h2>Stop! Cookie time</h2>
@@ -99,7 +99,7 @@
                 analyse our traffic. <span><a href="#"> Read more...</a></span></h6>
             </div>
             <div>
-                <button class="btn">I accept</button>
+                <button class="btn" onclick="removeCookie()" >I accept</button>
             </div>
         </div>
     </div>

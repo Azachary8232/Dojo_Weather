@@ -54,11 +54,13 @@
 }
 
 .footer{
+    width: 800px;
     height: 100px;
     margin-top: 50px;
     justify-content: space-evenly;
     border: 3px solid black;
     align-items: center;
+    position: fixed;
 }
 
 .title{
