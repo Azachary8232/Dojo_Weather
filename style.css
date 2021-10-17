@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.legoBorder{
+    border: 1px solid black;
+}
+
+.flex{
+    display: flex;
+}
+
+.marginAuto{
+    margin: auto;
+}
+
+.btn{
+    border: 3px solid black;
+}
+
+.navBar{
+    height: 75px;
+}
+
+.container{
+    height: 500px;
+    width: 800px;
+}
+
+.header{
+    height: 75px;
+}
+
+.body{
+    height: 300px;
+}
+
+.footer{
+    height: 100px;
+}
