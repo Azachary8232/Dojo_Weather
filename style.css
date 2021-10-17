@@ -17,13 +17,24 @@
 
 .btn{
     border: 3px solid black;
+    background-color: skyblue;
+    box-shadow: 3px 3px black;
+    width: 75px;
+    height: 30px;
+    margin-left: 75px;
 }
 
 .navBar{
     height: 75px;
-    background-color: lightskyblue;
+    background-color: skyblue;
+}
+
+.navBlock{
+    width: 800px;
     justify-content: space-between;
     align-items: center;
+    margin: auto;
+    height: 75px;
 }
 
 .container{
@@ -35,6 +46,7 @@
     height: 75px;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 3px solid black;
 }
 
 .body{
@@ -43,16 +55,18 @@
 
 .footer{
     height: 100px;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    border: 3px solid black;
+    align-items: center;
 }
 
 .title{
     color: white;
-    margin-left: 150px;
     font-size: 18pt;
 }
 
 .navLinks{
-    margin-right: 150px;
     justify-content: space-evenly;
     width: 400px;
 }
@@ -77,4 +91,69 @@
 
 .sanJose{
     font-size: 32pt;
+}
+
+.column{
+    flex: 1;
+}
+
+.highLow{
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    margin: 0px 25px;
+}
+
+.highLow_h4_1{
+    color: red;
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+.highLow_h4_2{
+    color: skyblue;
+    font-size: 24pt;
+    font-weight: bold;
+
+}
+
+.boxTop {
+    height: 245px;
+} 
+
+.today h1{
+    margin-left: 55px;
+    margin-top: 15px;
+}
+
+.boxTop img{
+    width: 135px;
+    margin-left: 25px;
+}
+
+.boxTop h2{
+    margin-left: 45px;
+}
+
+.tomorrow h1{
+    margin-left: 25px;
+    margin-top: 15px;
+}
+
+.friday h1{
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.saturday h1{
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.cookie{
+
+}
+
+.cookieText h6{
+    font-size: 12pt;
 }
