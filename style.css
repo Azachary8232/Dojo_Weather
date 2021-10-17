@@ -21,6 +21,9 @@
 
 .navBar{
     height: 75px;
+    background-color: lightskyblue;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .container{
@@ -30,6 +33,8 @@
 
 .header{
     height: 75px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .body{
@@ -38,4 +43,38 @@
 
 .footer{
     height: 100px;
+}
+
+.title{
+    color: white;
+    margin-left: 150px;
+    font-size: 18pt;
+}
+
+.navLinks{
+    margin-right: 150px;
+    justify-content: space-evenly;
+    width: 400px;
+}
+
+.navLinks a{
+    font-size: 18pt;
+    text-decoration: none;
+    color: white;
+}
+
+.temperature label{
+    font-size: 14pt;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.temperature select{
+    width: 50px;
+    border-width: 3px;
+    border-color: black;
+}
+
+.sanJose{
+    font-size: 32pt;
 }

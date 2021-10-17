@@ -8,16 +8,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="legoBorder navBar">
+    <div class="navBar flex">
         <!-- NavBar -->
+        <div class="title">
+            <h1>DojoWeather</h1>
+        </div>
+        <div class="navLinks flex">
+            <a href="#">Burbank</a>
+            <a href="#">Chicago</a>
+            <a href="#">Dallas</a>
+        </div>
     </div>
-    <div class="legoBorder container marginAuto">
+    <div class="container marginAuto">
         <!-- Container -->
-        <div class="legoBorder flex header">
+        <div class="flex header">
             <!-- Header -->
+            <div>
+                <h1 class="sanJose">San Jose</h1>
+            </div>
+            <div class="temperature">
+                <label for="temperature">show temperature in :</label>
+                <select name="temperature" id="temperature">
+                    <option value="Fahrenheit"><span>&#176;</span>F</option>
+                    <option value="Celcius"><span>&#176;</span>C</option>
+                </select>
+            </div>
         </div>
         <div class="legoBorder flex body">
             <!-- Body -->
+            
         </div>
         <div class="legoBorder flex footer">
             <!-- Cookie Footer -->
